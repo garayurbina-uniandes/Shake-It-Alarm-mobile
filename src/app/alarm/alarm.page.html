@@ -1,9 +1,61 @@
 <ion-header>
   <ion-toolbar>
-    <ion-title>alarm</ion-title>
+    <ion-title>Crear Alarma</ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content>
+  <form>
+    <ion-item lines="full">
+      <ion-label position="floating">Nombre</ion-label>
+      <ion-input type="text" required></ion-input>
+    </ion-item>
 
+    <ion-item lines="full">
+      <ion-label position="floating">Hora</ion-label>
+      <ion-datetime presentation="time" display-format="h:mm A" picker-format="h:mm A"></ion-datetime>
+    </ion-item>
+
+    <ion-item lines="full">
+      <ion-label position="inline">Días</ion-label>
+    </ion-item>
+    <ion-item lines="full">
+      <ion-checkbox name="S"></ion-checkbox>
+      <ion-label position="inline">S</ion-label>
+      <ion-checkbox name="M"></ion-checkbox>
+      <ion-label position="inline">M</ion-label>
+      <ion-checkbox name="T"></ion-checkbox>
+      <ion-label position="inline">T</ion-label>
+      <ion-checkbox name="W"></ion-checkbox>
+      <ion-label position="inline">W</ion-label>
+      <ion-checkbox name="T"></ion-checkbox>
+      <ion-label position="inline">T</ion-label>
+      <ion-checkbox name="F"></ion-checkbox>
+      <ion-label position="inline">F</ion-label>
+      <ion-checkbox name="S"></ion-checkbox>
+      <ion-label position="inline">S</ion-label>
+    </ion-item>
+
+    
+    <ion-button expand="block" color="primary" shape="round">Seleccionar Sonido</ion-button>
+    <ion-button expand="block" color="primary" shape="round">Seleccionar Patrón</ion-button>
+
+    <ion-item>
+      <ion-checkbox name="share"></ion-checkbox>
+      <ion-label position="inline">Compartir con otros usuarios</ion-label>
+    </ion-item>
+    <ion-row>
+      <ion-col>
+        <ion-button expand="block" color="secondary" shape="round">Volver</ion-button>
+      </ion-col>
+      <ion-col>
+        <ion-button expand="block" color="primary" shape="round" type="submit">Guardar</ion-button>
+      </ion-col>
+    </ion-row>
+  
+    
+    
+    
+    
+  </form>
 </ion-content>
