@@ -1,9 +1,16 @@
 <ion-header>
   <ion-toolbar>
-    <ion-title>playlist</ion-title>
+    <ion-title>Seleccionar Sonido</ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content>
-
+  <ion-row>
+    <ion-col>
+      <ion-button [routerLink]="['/alarm']" expand="block" color="secondary" shape="round">Volver</ion-button>
+    </ion-col>
+    <ion-col>
+      <ion-button expand="block" color="primary" shape="round" type="submit">Guardar</ion-button>
+    </ion-col>
+  </ion-row>
 </ion-content>
