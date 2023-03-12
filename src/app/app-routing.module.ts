@@ -23,6 +23,18 @@ const routes: Routes = [
     path: 'forgot-password',
     loadChildren: () => import('./forgot-password/forgot-password.module').then( m => m.ForgotPasswordPageModule)
   },
+  {
+    path: 'alarm',
+    loadChildren: () => import('./alarm/alarm.module').then( m => m.AlarmPageModule)
+  },
+  {
+    path: 'playlist',
+    loadChildren: () => import('./playlist/playlist.module').then( m => m.PlaylistPageModule)
+  },
+  {
+    path: 'pattern',
+    loadChildren: () => import('./pattern/pattern.module').then( m => m.PatternPageModule)
+  },
 ];
 
 @NgModule({
