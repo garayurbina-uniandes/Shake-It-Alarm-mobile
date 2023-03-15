@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Proyecto Básico HTML con CSS y jQuery</title>
+
+  <!-- Agregamos las hojas de estilo -->
+  <link rel="stylesheet"
+    href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <link rel="stylesheet"
+    href="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.css">
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@48,400,0,0" />
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    rel="stylesheet" />
+  <!-- Agregamos los scripts -->
+  <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+  <script
+    src="../node_modules/timepicker-ui/dist/timepicker-ui.umd.js"></script>
+
+  <!-- Agregamos nuestro CSS -->
+  <link rel="stylesheet" type="text/css" href="../css/style.css">
+
+  <style>
+    .mdc-checkbox .mdc-checkbox__native-control:enabled~.mdc-checkbox__background .mdc-checkbox__checkmark {
+      color: #381E72;
+    }
+
+    .mdc-checkbox .mdc-checkbox__native-control:enabled:checked~.mdc-checkbox__background,
+    .mdc-checkbox .mdc-checkbox__native-control:enabled:indeterminate~.mdc-checkbox__background,
+    .mdc-checkbox .mdc-checkbox__native-control[data-indeterminate=true]:enabled~.mdc-checkbox__background {
+      border-color: #D0BCFF;
+      background-color: #D0BCFF;
+    }
+
+    .mdc-radio .mdc-radio__native-control:enabled:checked+.mdc-radio__background .mdc-radio__outer-circle {
+      border-color: #381E72;
+    }
+
+    .mdc-radio .mdc-radio__native-control:enabled+.mdc-radio__background .mdc-radio__inner-circle {
+      border-color: #381E72;
+    }
+
+    svg.mdc-checkbox__checkmark {
+      color: #381E72;
+    }
+
+  </style>
+
+</head>
+
+<body>
+  <div class="container">
+    <div class="row justify-content-between">
+
+      <div class="col-md-12">
+        <h1>Spotify - Mis Playlist</h1>
+      </div>
+
+      <div class="col-md-12">
+        <div class="row header">
+
+        </div>
+
+        <div class="row">
+
+          <div class="mdc-form-field">
+            <div
+              class="mdc-radio mdc-ripple-upgraded mdc-ripple-upgraded--unbounded">
+              <input class="mdc-radio__native-control" type="radio" checked="">
+              <div class="mdc-radio__background">
+                <div class="mdc-radio__outer-circle"></div>
+                <div class="mdc-radio__inner-circle"></div>
+              </div>
+              <div class="mdc-radio__ripple"></div>
+            </div>
+            <label>Mi Playlist</label>
+          </div>
+
+        </div>
+        <div class="row">
+
+          <div class="mdc-form-field">
+            <div
+              class="mdc-radio mdc-ripple-upgraded mdc-ripple-upgraded--unbounded">
+              <input class="mdc-radio__native-control" type="radio">
+              <div class="mdc-radio__background">
+                <div class="mdc-radio__outer-circle"></div>
+                <div class="mdc-radio__inner-circle"></div>
+              </div>
+              <div class="mdc-radio__ripple"></div>
+            </div>
+            <label>Rocksito</label>
+          </div>
+
+        </div>
+        <div class="row">
+
+          <div class="mdc-form-field">
+            <div
+              class="mdc-radio mdc-ripple-upgraded mdc-ripple-upgraded--unbounded">
+              <input class="mdc-radio__native-control" type="radio">
+              <div class="mdc-radio__background">
+                <div class="mdc-radio__outer-circle"></div>
+                <div class="mdc-radio__inner-circle"></div>
+              </div>
+              <div class="mdc-radio__ripple"></div>
+            </div>
+            <label>Solo popular</label>
+          </div>
+
+        </div>
+
+
+      </div>
+
+
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-md-6">
+      <a href="crear.html"
+        class="mdc-button mdc-button--unelevated mdc-ripple-upgraded">
+        <span class="mdc-button__ripple"></span><span
+          class="material-symbols-rounded">
+          arrow_back
+        </span>Volver</a>
+    </div>
+    <div class="col-md-6">
+      <a href="crear.html"
+        class="mdc-button mdc-button--unelevated mdc-ripple-upgraded save">
+        <span class="mdc-button__ripple"></span>Guardar</a>
+    </div>
+  </div>
+
+  </div>
+
+  <!-- Required Material Web JavaScript library -->
+  <script type="text/javascript"
+    src="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.js"></script>
+  <!-- Instantiate single textfield component rendered in the document -->
+  <script type="text/javascript">
+    window.mdc.autoInit();
+  </script>
+
+  <script type="text/javascript" src="../script.js"></script>
+
+</body>
+
+</html>

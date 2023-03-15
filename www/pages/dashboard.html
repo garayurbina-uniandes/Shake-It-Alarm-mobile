@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Proyecto Básico HTML con CSS y jQuery</title>
+
+  <!-- Agregamos las hojas de estilo -->
+  <link rel="stylesheet"
+    href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <link rel="stylesheet"
+    href="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.css">
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@48,400,0,0" />
+  <!-- Agregamos los scripts -->
+  <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+  <!-- Agregamos nuestro CSS -->
+  <link rel="stylesheet" type="text/css" href="../css/style.css">
+</head>
+
+<body>
+  <div class="container">
+    <div class="row justify-content-between">
+      <div class="col-md-8">
+
+        <div class="row header">
+          <div class="col-md-6">
+            <h1>Alarmas</h1>
+          </div>
+          <div class="col-md-6 search">
+            <div class="text-field-container">
+              <div class="mdc-text-field mdc-text-field--filled"
+                data-mdc-auto-init="MDCTextField">
+                <span class="mdc-text-field__ripple"></span>
+                <input class="mdc-text-field__input" name="search" type="text"
+                  aria-labelledby="label">
+                <a href="resultado_busqueda.html">
+                  <span class="material-symbols-rounded">
+                    search
+                  </span>
+                </a>
+                <label class="mdc-floating-label">Buscar</label>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="row list-items">
+
+          <ul
+            class="mdc-list demo-list mdc-list--two-line mdc-list--avatar-list">
+            <li class="mdc-list-item mdc-ripple-upgraded">
+              <div class="col-md-9">
+                <span class="mdc-list-item__text">
+                  <span class="mdc-list-item__primary-text">Lunes a
+                    Viernes</span>
+                  <span class="mdc-list-item__secondary-text">06:00 am</span>
+                </span>
+
+              </div>
+              <div class="col-md-3">
+                <a href="detalle.html"
+                  class="mdc-button mdc-button--unelevated mdc-ripple-upgraded detail hidden-mobile">
+                  <span class="mdc-button__ripple"></span>Ver detalle</a>
+
+                <a href="editar.html"
+                  class="mdc-button mdc-button--unelevated mdc-ripple-upgraded edit hidden-web">
+                  <span class="mdc-button__ripple"></span>Editar</a>
+
+              </div>
+            </li>
+
+
+            <li class="mdc-list-item mdc-ripple-upgraded">
+              <div class="col-md-9">
+                <span class="mdc-list-item__text">
+                  <span class="mdc-list-item__primary-text">Sabado 4 de Marzo,
+                    2023</span>
+                  <span class="mdc-list-item__secondary-text">07:30 pm</span>
+                </span>
+              </div>
+              <div class="col-md-3">
+                <a href="detalle.html"
+                  class="mdc-button mdc-button--unelevated mdc-ripple-upgraded detail hidden-mobile">
+                  <span class="mdc-button__ripple"></span>Ver detalle</a>
+
+                <a href="editar.html"
+                  class="mdc-button mdc-button--unelevated mdc-ripple-upgraded edit hidden-web">
+                  <span class="mdc-button__ripple"></span>Editar</a>
+
+              </div>
+
+            </li>
+
+          </ul>
+
+        </div>
+
+        <div class="row botom hidden-web">
+          <div class="col-sm-6 checkbox-container left">
+            <a href="crear.html">
+              <span class="material-symbols-rounded icon">
+                lock
+              </span>
+            </a>
+          </div>
+          <div class="col-sm-5 checkbox-container right">
+            <a href="crear.html">
+              <span class="material-symbols-rounded icon">
+                add
+              </span>
+            </a>
+          </div>
+        </div>
+
+
+
+      </div>
+
+      <div class="col-md-4">
+        <div class="mdc-admin hidden-mobile">
+          <div class="mdc-admin__container">
+            <div class="mdc-dialog__surface">
+
+              <div class="mdc-dialog__header">
+                <span class="material-symbols-rounded">
+                  mobile_friendly
+                </span>
+
+                <!-- Title cannot contain leading whitespace due to mdc-typography-baseline-top() -->
+                <h2 class="mdc-dialog__title" id="my-dialog-title"><!--
+     -->Administración<!--
+   --></h2>
+              </div>
+
+              <div class="mdc-dialog__content" id="my-dialog-content">
+                <ul class="mdc-list mdc-list--avatar-list">
+                  <li class="mdc-list-item">
+                    <!-- Todo: cambiar a url correcta -->
+                    <a href="aspecto.html">
+                      <div class="circular--landscape first">
+                        <span class="material-symbols-rounded">person</span>
+                      </div>
+                      <span class="test-list-item__label">Personalizar
+                        aspecto</span>
+                    </a>
+                  </li>
+                  <li class="mdc-list-item">
+
+                    <a href="../index.html">
+                      <div class="circular--landscape second">
+                        <span class="material-symbols-rounded">person</span>
+                      </div>
+                      <span class="test-list-item__label">Cerrar sesión</span>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+              <div class="mdc-dialog__actions">
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+  </div>
+
+  <!-- Required Material Web JavaScript library -->
+  <script type="text/javascript"
+    src="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.js"></script>
+  <!-- Instantiate single textfield component rendered in the document -->
+  <script type="text/javascript">
+    window.mdc.autoInit();
+  </script>
+  <script type="text/javascript" src="../script.js"></script>
+
+
+</body>
+
+</html>

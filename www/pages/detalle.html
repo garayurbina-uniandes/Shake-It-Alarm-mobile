@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Proyecto Básico HTML con CSS y jQuery</title>
+
+  <!-- Agregamos las hojas de estilo -->
+  <link rel="stylesheet"
+    href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <link rel="stylesheet"
+    href="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.css">
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@48,400,0,0" />
+  <!-- Agregamos los scripts -->
+  <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+  <!-- Agregamos nuestro CSS -->
+  <link rel="stylesheet" type="text/css" href="../css/style.css">
+</head>
+
+<body>
+  <div class="container">
+    <div class="row justify-content-between">
+
+      <div class="col-md-12">
+        <h1>Detalle de la alarma Lunes a Viernes</h1>
+      </div>
+
+      <div class="col-md-6">
+        <div class="row header">
+
+        </div>
+
+        <div class="row">
+
+          <label for="start-time">Hora</label>
+
+          <input type="time" id="start-time" class="form-control" disabled
+            value="17:00">
+
+          <label for="week-days">Días</label>
+          <div id="week-days">
+            <input type="checkbox" id="sunday" value="sunday" checked disabled>
+            <label for="sunday">S</label>
+            <input type="checkbox" id="monday" value="monday" disabled>
+            <label for="monday">M</label>
+            <input type="checkbox" id="tuesday" value="tuesday" disabled>
+            <label for="tuesday">T</label>
+            <input type="checkbox" id="wednesday" value="wednesday" disabled>
+            <label for="wednesday">W</label>
+            <input type="checkbox" id="thursday" value="thursday" disabled>
+            <label for="thursday">T</label>
+            <input type="checkbox" id="friday" value="friday" disabled>
+            <label for="friday">F</label>
+            <input type="checkbox" id="saturday" value="saturday" checked
+              disabled>
+            <label for="saturday">S</label>
+          </div>
+        </div>
+
+
+      </div>
+
+      <div class="col-md-6">
+        <div class="row">
+
+          <div class="text-field-container text-one">
+            <div class="mdc-text-field mdc-text-field--filled"
+              data-mdc-auto-init="MDCTextField">
+              <span class="mdc-text-field__ripple"></span>
+              <input class="mdc-text-field__input" type="text"
+                aria-labelledby="label" value="MIA_PLAYLIST" disabled>
+              <label class="mdc-floating-label">Lista de reproducción</label>
+            </div>
+            <div class="mdc-text-field-helper-line">
+              <p class="mdc-text-field-helper-text mdc-text-field-helper-text--persistent mdc-text-field-helper-text--validation-msg"
+                id="text-field-filled-trailing-helper-text">Puedes cambiar el sonido desde la app</p>
+            </div>
+          </div>
+
+          <div class="text-field-container text-one">
+            <div class="mdc-text-field mdc-text-field--filled"
+              data-mdc-auto-init="MDCTextField">
+              <span class="mdc-text-field__ripple"></span>
+              <input class="mdc-text-field__input" type="text"
+                aria-labelledby="label" value="ASIGNADO" disabled>
+              <label class="mdc-floating-label">Patrón</label>
+            </div>
+            <div class="mdc-text-field-helper-line">
+              <p class="mdc-text-field-helper-text mdc-text-field-helper-text--persistent mdc-text-field-helper-text--validation-msg"
+                id="text-field-filled-trailing-helper-text">Puedes cambiar el patrón desde la app</p>
+            </div>
+          </div>
+
+          <img src="../css/images/detalleimg.png" alt="detalle"
+            class="img-detalle">
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-md-12">
+        <a href="dashboard.html"
+          class="mdc-button mdc-button--unelevated mdc-ripple-upgraded">
+          <span class="mdc-button__ripple"></span><span
+            class="material-symbols-rounded">
+            arrow_back
+          </span>Volver</a>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Required Material Web JavaScript library -->
+  <script type="text/javascript"
+    src="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.js"></script>
+  <!-- Instantiate single textfield component rendered in the document -->
+  <script type="text/javascript">
+    window.mdc.autoInit();
+  </script>
+  <script type="text/javascript" src="../script.js"></script>
+
+
+</body>
+
+</html>
